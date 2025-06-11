@@ -2,7 +2,12 @@ name: build and push images
 
 on:
   push:
-    branches: ['master']
+    branches: 
+      - master
+      - main
+
+permissions:
+  packages: write
 
 jobs:
   build-and-push-image:
